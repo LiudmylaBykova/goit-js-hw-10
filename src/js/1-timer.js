@@ -28,7 +28,7 @@ const options = {
     } else {
       iziToast.show({
         position: 'topRight',
-        iconUrl: '../img/error.svg#error',
+        iconUrl: '/img/error.svg#error',
         iconColor: '#fff',
         message: 'Please choose a date in the future!',
         messageColor: '#fff',
