@@ -27,9 +27,9 @@ const options = {
       refs.startBtn.classList.remove('disabled');
     } else {
       iziToast.show({
+        class: 'timer-svg',
         position: 'topRight',
-        iconUrl: './../img/error.svg#error',
-        iconColor: '#fff',
+        icon: 'timer-svg',
         message: 'Please choose a date in the future!',
         messageColor: '#fff',
         messageSize: '16px',
