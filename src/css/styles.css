@@ -25,9 +25,11 @@
   -webkit-text-size-adjust: 100%;
 }
 
-/* Timer */
+/* ------------------------------------------------ */
+/* ----Timer----- */
 body {
   padding: 36px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .datetime-input {
@@ -36,7 +38,6 @@ body {
   border-radius: 4px;
   border: 1px solid #808080;
   color: #2E2F42;
-  font-family: Montserrat;
   font-size: 16px;
   letter-spacing: 0.04em;
   margin-right: 8px;
@@ -62,8 +63,7 @@ body {
   background-color: #4E75FF;
   border: none;
   color: #fff;
-  font-family: Montserrat;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.04em;
   padding: 0;
@@ -71,6 +71,12 @@ body {
 
 .start-btn:hover {
   background-color: #6C8CFF;
+}
+
+.start-btn.disabled {
+  color: #989898;
+  background-color: #cfcfcf;
+  cursor: not-allowed;
 }
 
 .timer {
@@ -89,7 +95,6 @@ body {
 
 .value {
   color: #2E2F42;
-  font-family: Montserrat;
   font-size: 40px;
   line-height: 1.2;
   letter-spacing: 0.04em;
@@ -97,7 +102,12 @@ body {
 
 .label {
   color: #2E2F42;
-  font-family: Montserrat;
   font-size: 16px;
   text-transform: uppercase;
 }
+
+.flatpickr-calendar.open {
+  background-color: #F5F5F5;
+}
+
+/* ----------- */
