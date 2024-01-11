@@ -16,7 +16,7 @@ form.addEventListener('submit', event => {
         class: 'access-svg',
         position: 'topRight',
         icon: 'access-svg',
-        message: `Fulfilled promise in ${delay}ms!`,
+        message: `Fulfilled promise in ${delay} ms!`,
         messageColor: '#fff',
         messageSize: '16px',
         backgroundColor: '#59A10D',
@@ -26,10 +26,10 @@ form.addEventListener('submit', event => {
     )
     .catch(error =>
       iziToast.show({
-        class: 'snack-error-svg',
+        class: 'error-svg',
         position: 'topRight',
-        icon: 'snack-error-svg',
-        message: `Rejected promise in ${delay}ms!`,
+        icon: 'error-svg',
+        message: `Rejected promise in ${delay} ms!`,
         messageColor: '#fff',
         messageSize: '16px',
         backgroundColor: '#EF4040',
