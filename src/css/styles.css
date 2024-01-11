@@ -112,8 +112,63 @@ body {
   background-color: #F5F5F5;
 }
 
-.timer-svg {
+.error-svg {
   background-image: url(../img/error.svg);
 }
 
-/* ----------- */
+/* -----Snackbar------ */
+
+.form {
+  width: 360px;
+  height: 230px;
+}
+
+.delay-input {
+  width: 328px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  outline: none;
+  padding: 8px 16px;
+}
+
+.delay-input:hover {
+  border: 1px solid #000;
+}
+
+.delay-input:focus {
+  border: 1px solid #4E75FF;
+}
+
+.fieldset-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  width: 360px;
+  height: 64px;
+  padding: 0;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+  margin-bottom: 24px;
+  margin-top: 30px;
+}
+
+.form-btn {
+  color: #FFF;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  width: 360px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #4E75FF;
+  border: none;
+  padding: 0;
+}
+
+.form-btn:hover {
+  background-color: #6C8CFF;
+}
+
+.access-svg {
+  background-image: url(../img/succes.svg);
+}

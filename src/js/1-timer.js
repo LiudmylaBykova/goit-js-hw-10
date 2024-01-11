@@ -15,6 +15,7 @@ const refs = {
   timerMinutes: document.querySelector('span[data-minutes]'),
   timerSeconds: document.querySelector('span[data-seconds]'),
 };
+refs.startBtn.disabled = true;
 
 const options = {
   enableTime: true,
@@ -24,12 +25,14 @@ const options = {
   onClose(selectedDates) {
     if (selectedDates[0].getTime() > Date.now()) {
       userSelectedDate = selectedDates[0].getTime();
+
+      refs.startBtn.disabled = false;
       refs.startBtn.classList.remove('disabled');
     } else {
       iziToast.show({
-        class: 'timer-svg',
+        class: 'error-svg',
         position: 'topRight',
-        icon: 'timer-svg',
+        icon: 'error-svg',
         message: 'Please choose a date in the future!',
         messageColor: '#fff',
         messageSize: '16px',
@@ -37,6 +40,8 @@ const options = {
         close: false,
         closeOnClick: true,
       });
+
+      refs.startBtn.disabled = true;
       refs.startBtn.classList.add('disabled');
     }
   },
