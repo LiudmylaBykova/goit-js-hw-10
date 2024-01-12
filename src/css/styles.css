@@ -46,6 +46,18 @@ body {
   outline: none;
 }
 
+.datetime-input.disabled {
+  color: #989898;
+  background-color: #cfcfcf;
+  border: 1px solid transparent;
+
+}
+
+.datetime-input.disabled:hover {
+  cursor: not-allowed;
+  border: 1px solid transparent;
+}
+
 .datetime-input:hover {
   border-radius: 4px;
   border: 1px solid #000;
